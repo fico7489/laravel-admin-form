@@ -1,34 +1,34 @@
 {
-  "name": "fico7489/laravel-admin-form",
-  "description": "Laravel admin form",
-  "keywords": [
-    "laravel",
-    "Laravel admin form"
-  ],
-  "homepage": "https://github.com/fico7489/laravel-admin-form",
-  "support": {
-    "issues": "https://github.com/fico7489/laravel-admin-form/issues",
-    "source": "https://github.com/fico7489/laravel-admin-form"
-  },
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Filip Horvat",
-      "email": "fico7489@gmail.com",
-      "homepage": "https://github.com/fico7489",
-      "role": "Developer"
-    }
-  ],
-  "require": {
-    "php": "^7.4",
-    "laravel/framework": "^8.0",
-    "guzzlehttp/guzzle": "7.*"
-  },
-  "autoload": {
-    "psr-4": {
-      "Fico7489\\AdminForm\\": "src"
-    }
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+    "name": "fico7489/laravel-admin-form",
+    "description": "Laravel admin form",
+    "keywords": [
+        "laravel",
+        "Laravel admin form"
+    ],
+    "homepage": "https://github.com/fico7489/laravel-admin-form",
+    "support": {
+        "issues": "https://github.com/fico7489/laravel-admin-form/issues",
+        "source": "https://github.com/fico7489/laravel-admin-form"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Filip Horvat",
+            "email": "fico7489@gmail.com",
+            "homepage": "https://github.com/fico7489",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "laravel/framework": "^8.0",
+        "laravelcollective/html": "6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fico7489\\AdminForm\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
