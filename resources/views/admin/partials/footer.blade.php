@@ -8,7 +8,7 @@
 
     <div class="navbar-collapse collapse" id="navbar-footer">
         <span class="navbar-text">
-            &copy; 2020. <a href="#" target="_blank">{{ config('app.name') }}</a>
+            &copy; {{ config('app.year') }}. <a href="#" target="_blank">{{ config('app.name') }}</a>
         </span>
     </div>
 </div>
