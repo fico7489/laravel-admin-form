@@ -11,7 +11,7 @@ class AdminFormServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'admin_form');
 
-        view('admin_form::admin.partials.form.input');
+        view('admin_form::form.input');
 
     }
 }

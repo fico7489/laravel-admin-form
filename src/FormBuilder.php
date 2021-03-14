@@ -48,7 +48,7 @@ class FormBuilder extends \Collective\Html\FormBuilder
 
             $inputString = call_user_func_array([$this, $methodName], $args);
 
-            return view('admin_form::admin.partials.form.input', ['label' => $this->getLabel(), 'name' => $args[0], 'inputString' => $inputString, 'methodName' => $methodName]);
+            return view('admin_form::form.input', ['label' => $this->getLabel(), 'name' => $args[0], 'inputString' => $inputString, 'methodName' => $methodName]);
         }
 
         throw new \Exception('Not supported method -> '.$methodName);
@@ -68,7 +68,7 @@ class FormBuilder extends \Collective\Html\FormBuilder
 
     public function submit($value = null, $options = [])
     {
-        return view('admin_form::admin.partials.form.submit', ['name' => $value]);
+        return view('admin_form::form.submit', ['name' => $value]);
     }
 
     public function model($model = null, $options = [])
@@ -98,6 +98,6 @@ class FormBuilder extends \Collective\Html\FormBuilder
 
     public function rawRow($name, $value, $options = [])
     {
-        return view('admin_form::admin.partials.form.raw', ['name' => $name, 'value' => $value, 'options' => $options]);
+        return view('admin_form::form.raw', ['name' => $name, 'value' => $value, 'options' => $options]);
     }
 }

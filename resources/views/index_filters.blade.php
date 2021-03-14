@@ -57,7 +57,7 @@
         <div style="width: 10%; float: left; padding: 0.6rem;">
             @if(isset($create))
                 <a href="{{ $create }}" style="float: right;">
-                    <button type="submit" class="btn btn-primary">Dodaj novi<i class="icon-new-tab ml-2"></i></button>
+                    <button type="submit" class="btn btn-primary">Dodaj novo<i class="icon-new-tab ml-2"></i></button>
                 </a>
             @endif
         </div>
