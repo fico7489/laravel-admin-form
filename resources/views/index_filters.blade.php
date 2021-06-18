@@ -15,14 +15,7 @@
                 <input type="text" class="form-control" name="q" value="{{ request()->get('q') }}" placeholder="Pretraži...">
             </div>
             <div class="input-group mb-2 mr-sm-2">
-                <?php
-                $showDeleted = false;
-                if ($models && ($modelFirst = $models->first()) && isClassUseTrait($modelFirst, \Illuminate\Database\Eloquent\SoftDeletes::class)) {
-                    $showDeleted = true;
-                }
-                ?>
-
-                @if($showDeleted)
+                @if ($class && isClassUseTrait($class, \Illuminate\Database\Eloquent\SoftDeletes::class))
                     <label class="my-1 mr-2" for="is_deleted">Obrisano?</label>
                     {{ Form::select('is_deleted', [
                         '' => 'Ne',
@@ -63,3 +56,4 @@
         </div>
     </div>
 </div>
+
